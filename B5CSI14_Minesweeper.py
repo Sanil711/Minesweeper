@@ -75,7 +75,7 @@ class Board:
                 else:
                     visible_board[row][col] = ' '
 
-                # This code is for format
+# The code below is for appearance of the board 
         string_rep = ''
 
         widths = []
@@ -113,7 +113,7 @@ class Board:
 
 
 # Code for game functionality
-def play(boardSize=10, boardBombs=10):
+def play(boardSize=10, boardBombs=10): # Right over here you can change the board's total size and number of bombs on the board 
     board = Board(boardSize, boardBombs)
 
     safe = True
@@ -138,7 +138,7 @@ def play(boardSize=10, boardBombs=10):
         print(board)
         print("\t|| GAME OVER ||")
 
-# Added instructions 11/9/21
+# Added instructions 11/9/21 according to suggestion by a mentor
 def rules():
     print('''\t\t|| MINESWEEPER ||\n
     - Your objective is to clear the board in front of you
